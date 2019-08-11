@@ -1,0 +1,141 @@
+// Laptops and Tablets
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    #header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+// Smart phones
+@media (max-width: 500px) {
+  #header-content {
+    display: none;
+  }
+
+  #main-nav {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+
+    li {
+      padding: 1.2rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem;
+      background: $bg-image no-repeat 20% 30% / cover;
+      border-bottom: 2px solid $main-color;
+    }
+
+    &-inner {
+      height: 10rem;
+      border-bottom: 2px solid $main-color;
+    }
+  }
+
+  #home-a .specials,
+  #home-b,
+  #home-c .process,
+  #about-d .testimonials,
+  #contact-b .contact-info,
+  #work-a .items {
+    grid-template-columns: 1fr;
+  }
+
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding: 1.5rem;
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+    &-b {
+      div {
+        padding: 2rem 0;
+      }
+    }
+  }
+}
+
+// About
+#about {
+  &-a {
+    #about-info {
+      grid-template-areas:
+        "bioimg"
+        "bio"
+        "aw1"
+        "aw2"
+        "aw3";
+    }
+  }
+
+  &-d {
+    .testimonials {
+    }
+  }
+}
+
+// Contact
+#contact {
+  &-a {
+    .text-fields {
+      grid-template-areas:
+        "name"
+        "subject"
+        "email"
+        "phone"
+        "message";
+    }
+  }
+
+  &-b {
+    div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px $medium-color solid;
+
+      &:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+#main-footer {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .social {
+      padding: 1rem;
+    }
+  }
+}
+
+// Landscape
+@media (max-height: 580px) {
+  #header-home {
+    #header-content {
+      padding-top: 3rem;
+    }
+  }
+
+  #contact-b {
+    div {
+      border-bottom: none;
+    }
+  }
+}
