@@ -212,7 +212,7 @@ img {
       border-color: #ffbc00; }
 
 #header-home {
-  background: url("/dist/img/showcase.jpg") no-repeat center center/cover;
+  background: url("/dist/img/pexels.jpg") no-repeat center center/cover;
   height: 100vh;
   color: #fff; }
 
@@ -221,7 +221,7 @@ img {
   text-align: center; }
 
 #header-inner {
-  background: url("/dist/img/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("/dist/img/pexels.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #ffbc00; }
 
@@ -292,7 +292,8 @@ img {
 
 #about-a #about-info {
   display: grid;
-  grid-template-areas: "bioimg bio bio" "aw1 aw2 aw3";
+  grid-template-areas: "bioimg bio bio"
+ "aw1 aw2 aw3";
   grid-gap: 1.2rem; }
   #about-a #about-info .bio-img {
     grid-area: bioimg; }
@@ -355,7 +356,9 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: "name email"
+ "subject phone"
+ "message message";
   grid-gap: 1.2rem; }
   #contact-a .text-fields .text-input {
     padding: 0.5rem 0.75rem; }
@@ -442,10 +445,18 @@ img {
     padding: 2rem 0; } }
 
 #about-a #about-info {
-  grid-template-areas: "bioimg" "bio" "aw1" "aw2" "aw3"; }
+  grid-template-areas: "bioimg"
+ "bio"
+ "aw1"
+ "aw2"
+ "aw3"; }
 
 #contact-a .text-fields {
-  grid-template-areas: "name" "subject" "email" "phone" "message"; }
+  grid-template-areas: "name"
+ "subject"
+ "email"
+ "phone"
+ "message"; }
 
 #contact-b div {
   margin-bottom: 1rem;
